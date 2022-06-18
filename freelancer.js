@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
 
     $('#btn-next').on('click', function(event) {
         event.preventDefault();
-        var total_time = Number($('#total_time').html());
+        var total_time = 0 ;
         console.log(total_time);
         $.ajax({
           url: '/api/check_answer',
